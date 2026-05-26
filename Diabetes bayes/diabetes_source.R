@@ -692,7 +692,7 @@ make_train_test_split <- function(X, y, train_frac = 0.7, seed = 100) {
   set.seed(seed)
   n <- length(y)
   n_train <- floor(train_frac * n)
-  idx <- sample.int(n)
+  idx <- s ample.int(n)
   train_idx <- idx[seq_len(n_train)]
   test_idx <- idx[(n_train + 1):n]
   list(
